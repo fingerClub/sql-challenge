@@ -35,7 +35,7 @@ INNER JOIN employees E
 ON (E.emp_no=DM.emp_no)
 WHERE D.dept_name = 'Sales'
 
-SELECT DM.dept_no, DM.emp_no, D.dept_name, E.last_name, E.first_name
+SELECT DM.emp_no, D.dept_name, E.last_name, E.first_name
 FROM dept_emp DM
 INNER JOIN departments D
 ON (D.dept_no=DM.dept_no)
